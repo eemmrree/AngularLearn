@@ -7,7 +7,6 @@ import { SuperHero } from '../models/super-hero';
   providedIn: 'root'
 })
 export class SuperHeroService {
-  private url = "";
   constructor(private http: HttpClient) { }
 
   public getSuperHeroes() : Observable<SuperHero[]> {
